@@ -1,0 +1,33 @@
+name: 콘텐츠 작업
+description: 프로젝트 설명, 이미지, 이력서 등 콘텐츠 정리
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: dropdown
+    id: section
+    attributes:
+      label: 대상 구역
+      options:
+        - 기본 프로필
+        - Java Forest
+        - Data Lab
+        - K-Market
+        - Spring City
+        - AI Terminal
+        - 연락처 및 이력서
+    validations:
+      required: true
+  - type: textarea
+    id: materials
+    attributes:
+      label: 필요한 자료와 수정 내용
+    validations:
+      required: true
+  - type: checkboxes
+    id: verify
+    attributes:
+      label: 공개 전 확인
+      options:
+        - label: 개인정보와 팀원 정보 노출 여부를 확인했습니다.
+        - label: 구현 완료 기능과 향후 계획을 구분했습니다.
+

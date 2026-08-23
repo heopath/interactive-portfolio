@@ -1,0 +1,26 @@
+name: 기능 작업
+description: 포트폴리오 기능 구현 또는 개선
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목표
+      description: 이 작업으로 어떤 사용자 경험을 만들지 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 작업 항목
+      value: |
+        - [ ] 
+        - [ ] 
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+    validations:
+      required: true
+
