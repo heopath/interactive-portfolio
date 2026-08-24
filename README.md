@@ -1,8 +1,8 @@
 # MINJAE.DEV — Interactive Portfolio
 
-> 캐릭터와 함께 Java 기초부터 AI 웹 서비스까지의 성장 과정을 탐험하는 인터랙티브 포트폴리오
+> 현장 IT 운영 경험부터 Java/Spring 서비스의 개발·배포까지 탐험하는 인터랙티브 포트폴리오
 
-허민재의 720시간 교육 과정과 프로젝트 경험을 횡스크롤 게임의 형태로 구성한 웹 포트폴리오입니다. 재미있는 첫인상과 빠른 정보 확인을 모두 제공하는 것을 목표로 합니다.
+허민재의 21개월 IT 인프라·MES 운영 경험과 백엔드 프로젝트를 횡스크롤 게임의 형태로 구성한 웹 포트폴리오입니다. 게임을 사용하지 않아도 빠르게 핵심 역량을 확인할 수 있는 구조를 함께 제공합니다.
 
 ## 현재 상태
 
@@ -14,30 +14,33 @@
 - [x] 프로젝트 상세 모달
 - [x] 빠르게 보기
 - [x] 모바일 반응형과 모션 감소 지원
+- [x] 포지셔닝과 전체 콘텐츠 명세
+- [x] All My Trips 개인 기여·문제 해결 사례
 - [ ] 실제 캐릭터 스프라이트 적용
-- [ ] 프로젝트 이미지와 문제 해결 사례 추가
-- [ ] 이력서와 연락처 연결
+- [ ] 시연 영상 기반 프로젝트 이미지·GIF 추가
+- [ ] 이력서 PDF 연결
 - [ ] GitHub Pages 자동 배포
 - [ ] 공개 전 개인정보 최종 검토
 
-자세한 순서는 [로드맵](docs/ROADMAP.md), 준비할 자료는 [콘텐츠 체크리스트](docs/CONTENT_CHECKLIST.md)에서 확인할 수 있습니다.
+콘텐츠 방향은 [포트폴리오 명세](docs/PORTFOLIO_BRIEF.md), All My Trips의 상세 근거는 [개인 사례](docs/ALL_MY_TRIPS_CASE_STUDY.md)에서 확인할 수 있습니다. 전체 순서는 [로드맵](docs/ROADMAP.md), 준비할 자료는 [콘텐츠 체크리스트](docs/CONTENT_CHECKLIST.md)에 정리합니다.
 
 ## 포트폴리오 지도
 
 | 구역 | 보여주는 경험 | 대표 기술/프로젝트 |
 |---|---|---|
-| 출발점 | 교육 과정과 개발 목표 | 720시간 교육 과정 |
-| Java Forest | 프로그래밍 기초와 객체지향 | Java, OOP, JSP |
-| Data Lab | 데이터 모델링과 저장 | SQL, MariaDB, ERD, JPA |
-| K-Market | 팀 협업과 비즈니스 도메인 | Spring Boot, MySQL, Thymeleaf |
-| Spring City | 서비스 구조와 배포 | Security, Docker, GitHub Actions |
-| AI Terminal | AI 기반 서비스 설계 | Gemini API, RAG, ChromaDB, Redis |
+| Backend Journey | 포지셔닝과 핵심 강점 | Java/Spring, IT 운영 21개월 |
+| Field Base | IT혁신팀 실무 경험 | MES, Windows Server, AD/ACL |
+| Smart Factory | 제조 공정 데이터 연동 | C# WinForms, Oracle DB |
+| Spring Transition | 웹 백엔드 전환 | Java, Spring Boot, JPA/MyBatis |
+| K-Market | 관리자 운영 도메인 | Spring Boot, MySQL, GitHub Actions |
+| All My Trips | 팀장·백엔드·인프라 역량 종합 | Redis Lua, PostgreSQL, AWS CI/CD |
+| Next Stage | 성장 목표와 연락 | Backend Engineering, Operation |
 
 ## 대표 프로젝트
 
-- [All My Trips](https://github.com/heopath/TravelGuide-Project-Team1) — AI 맞춤 여행 일정 플랫폼
-- [ShoppingMall Project](https://github.com/heopath/ShoppingMall-Project-Team3) — 쇼핑몰 전체 도메인과 관리자 기능
-- [Spring GitHub Actions](https://github.com/heopath/spring-github-action-app) — Spring Boot 빌드·배포 자동화 학습
+- [All My Trips](https://github.com/heopath/TravelGuide-Project-Team1) — 여행 계획부터 예약·결제·QR 검표까지 연결한 AI 여행 플랫폼
+- [K-Market](https://github.com/heopath/ShoppingMall-Project-Team3) — 상품·주문·배송·반품 관리자 운영 흐름
+- [PVC 재활용 공정 MES](https://github.com/heopath/2022-SmartFactory) — Oracle DB와 C# WinForms 기반 제조실행시스템
 
 ## 기술 구성
 
