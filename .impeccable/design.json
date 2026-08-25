@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-25T22:00:00+09:00",
+  "title": "Design System: MINJAE.DEV V2 Career Adventure",
+  "extensions": {
+    "colorMeta": {
+      "start-coral": { "role": "primary", "displayName": "Start Coral", "canonical": "#ff7657", "tonalRamp": ["#451d18", "#702d24", "#9c3f31", "#c95540", "#ff7657", "#ff9b87", "#ffc5b8", "#fff0eb"] },
+      "field-green": { "role": "primary", "displayName": "Field Green", "canonical": "#74aa6a", "tonalRamp": ["#1c321a", "#2e502a", "#416f3b", "#568f4e", "#74aa6a", "#9bc594", "#c6dfc1", "#eef7ec"] },
+      "factory-blue": { "role": "primary", "displayName": "Factory Blue", "canonical": "#4d9ec5", "tonalRamp": ["#132e3a", "#1f4a5e", "#2c6782", "#3a85a7", "#4d9ec5", "#7ebbd7", "#b2d8e8", "#e8f4f9"] },
+      "spring-violet": { "role": "primary", "displayName": "Spring Violet", "canonical": "#8b79c6", "tonalRamp": ["#29223d", "#423762", "#5c4d88", "#7563ad", "#8b79c6", "#aa9bd6", "#cec5e8", "#f1eef8"] },
+      "market-lime": { "role": "primary", "displayName": "Market Lime", "canonical": "#b4d446", "tonalRamp": ["#303b10", "#4d5f19", "#6b8423", "#8aaa30", "#b4d446", "#cce477", "#e2efac", "#f6fae8"] },
+      "trips-orange": { "role": "primary", "displayName": "Trips Orange", "canonical": "#ff9d45", "tonalRamp": ["#4a2910", "#754118", "#a35b22", "#d7782f", "#ff9d45", "#ffbb7c", "#ffd8b4", "#fff1e5"] },
+      "next-coral": { "role": "primary", "displayName": "Next Coral", "canonical": "#e66f66", "tonalRamp": ["#42201e", "#6b322e", "#934640", "#bd5a52", "#e66f66", "#ee9993", "#f5c2be", "#fceceb"] },
+      "paper": { "role": "neutral", "displayName": "HUD Paper", "canonical": "#faf7ef", "tonalRamp": ["#282720", "#46443a", "#666257", "#898478", "#aca79b", "#cfcbc0", "#e8e4da", "#faf7ef"] },
+      "panel-paper": { "role": "neutral", "displayName": "Panel Paper", "canonical": "#fffdf7", "tonalRamp": ["#292821", "#47453c", "#68655b", "#8b877c", "#afaba0", "#d2cec4", "#ebe8df", "#fffdf7"] },
+      "world-sky": { "role": "neutral", "displayName": "World Sky", "canonical": "#cfe3dc", "tonalRamp": ["#20302b", "#354f47", "#4e7065", "#6d9286", "#91b5aa", "#b3d0c7", "#d3e7e0", "#eff8f5"] },
+      "sky-light": { "role": "neutral", "displayName": "Sky Light", "canonical": "#e8f1eb", "tonalRamp": ["#252d28", "#404b44", "#5e6b63", "#7f8d84", "#a2b0a7", "#c4d1c9", "#dfe9e2", "#f4f8f5"] },
+      "sky-depth": { "role": "neutral", "displayName": "Sky Depth", "canonical": "#bdd9d2", "tonalRamp": ["#1e2e2a", "#324c46", "#496b63", "#658c83", "#85aea5", "#aacbc4", "#cfe5df", "#edf7f4"] },
+      "grass": { "role": "neutral", "displayName": "Grass", "canonical": "#93b273", "tonalRamp": ["#26311b", "#3e4f2c", "#576e3e", "#718e53", "#93b273", "#b1ca97", "#d1dfbd", "#eff5e8"] },
+      "grass-depth": { "role": "neutral", "displayName": "Grass Depth", "canonical": "#739558", "tonalRamp": ["#202b18", "#344626", "#496135", "#5e7c35", "#739558", "#9ab281", "#c2d0ae", "#eaf1e2"] },
+      "road-sand": { "role": "neutral", "displayName": "Road Sand", "canonical": "#d8c7a5", "tonalRamp": ["#332d22", "#554b39", "#786a52", "#9c8a6c", "#bdaa8a", "#d8c7a5", "#e9dcc4", "#f8f1e5"] },
+      "outline-ink": { "role": "neutral", "displayName": "Outline Ink", "canonical": "#293a31", "tonalRamp": ["#17201b", "#293a31", "#465a4f", "#667b70", "#899d92", "#afbeb6", "#d3ddd7", "#f0f4f2"] },
+      "action-ink": { "role": "neutral", "displayName": "Action Ink", "canonical": "#213128", "tonalRamp": ["#141d18", "#213128", "#405148", "#607268", "#83958b", "#a9bab1", "#d0dbd5", "#eef3f0"] },
+      "body-ink": { "role": "neutral", "displayName": "Body Ink", "canonical": "#526058", "tonalRamp": ["#1b211e", "#343d38", "#526058", "#707f77", "#91a098", "#b3c0b9", "#d5ddd9", "#f1f4f2"] },
+      "muted-ink": { "role": "neutral", "displayName": "Muted Ink", "canonical": "#7c8881", "tonalRamp": ["#202421", "#3a403c", "#565e59", "#737d77", "#929c96", "#b3bcb7", "#d5dbd8", "#f1f4f2"] },
+      "sun-gold": { "role": "secondary", "displayName": "Sun Gold", "canonical": "#ffd370", "tonalRamp": ["#49380f", "#735919", "#9e7b24", "#cba030", "#ffd370", "#ffe199", "#ffedbf", "#fff8e8"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Stage Display", "purpose": "Current destination titles in the story panel." },
+      "headline": { "displayName": "Quest Headline", "purpose": "Project and route-map drawer headings." },
+      "body": { "displayName": "Korean Narrative", "purpose": "Stage stories, outcomes, roles, and proof." },
+      "label": { "displayName": "Game State Label", "purpose": "HUD status, stage counts, signs, metadata, and keyboard hints." }
+    },
+    "shadows": [
+      { "name": "story-float", "value": "0 22px 55px #25382e26", "purpose": "Separates the translucent story card from scenery." },
+      { "name": "landmark-lift", "value": "0 18px 32px #2e49352e", "purpose": "Grounds active landmark structures." },
+      { "name": "station-sign", "value": "0 5px 14px #283b3026", "purpose": "Maintains sign readability over the world." },
+      { "name": "drawer-lift", "value": "-25px 0 70px #10201840", "purpose": "Establishes the right-side modal sheet." }
+    ],
+    "motion": [
+      { "name": "world-travel", "value": "780ms cubic-bezier(.22,1,.36,1)", "purpose": "Centers the selected landmark on the track." },
+      { "name": "mountain-parallax", "value": "800ms cubic-bezier(.22,1,.36,1)", "purpose": "Moves the mountain layers behind the track." },
+      { "name": "landmark-state", "value": "500ms cubic-bezier(.22,1,.36,1)", "purpose": "Scales and reveals the active stop." },
+      { "name": "story-entry", "value": "420ms cubic-bezier(.22,1,.36,1)", "purpose": "Rises and fades the selected story." },
+      { "name": "drawer-entry", "value": "400ms cubic-bezier(.22,1,.36,1)", "purpose": "Slides a drawer from the right." },
+      { "name": "hero-walk", "value": "320ms alternate during a 620ms move state", "purpose": "Alternates limbs and bobs the hero." },
+      { "name": "beacon-pulse", "value": "1.6s ease-in-out infinite", "purpose": "Marks the active landmark." },
+      { "name": "reduced-motion", "value": "0.01ms, one iteration, transitions none", "purpose": "Collapses motion under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "850px" },
+      { "name": "small", "value": "480px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "HUD Map Action",
+      "kind": "button",
+      "refersTo": "hud-action",
+      "description": "Paper-framed action that opens the complete journey map.",
+      "html": "<button class=\"ds-hud-action\">전체 지도</button>",
+      "css": ".ds-hud-action{height:40px;border:1px solid #25342c2e;background:#fff;color:#213128;padding:0 14px;font:400 12px 'Noto Sans KR',sans-serif;cursor:pointer}.ds-hud-action:hover{background:#fffdf7}.ds-hud-action:focus-visible{outline:3px solid #ff7657;outline-offset:4px}.ds-hud-action:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Active Landmark",
+      "kind": "button",
+      "description": "Geometric destination with a live beacon and station sign.",
+      "html": "<button class=\"ds-landmark\"><i></i><span><b>06</b>All My Trips</span></button>",
+      "css": ".ds-landmark{width:230px;height:250px;border:0;background:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;color:#293a31}.ds-landmark i{width:175px;height:120px;background:#ff9d45;border:4px solid #293a31;box-shadow:0 18px 32px #2e49352e}.ds-landmark span{margin-top:14px;background:#fffdf7;border:2px solid #293a31;padding:7px 10px;font:600 11px 'IBM Plex Mono',monospace;box-shadow:0 5px 14px #283b3026}.ds-landmark b{color:#ff9d45;margin-right:8px}.ds-landmark:hover{filter:brightness(1.03)}.ds-landmark:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-landmark:active{transform:scale(.98)}"
+    },
+    {
+      "name": "Stage Story Panel",
+      "kind": "card",
+      "refersTo": "story-panel",
+      "description": "Current-stage narrative card with count rail and technology chip.",
+      "html": "<article class=\"ds-story\"><div><span>STAGE</span><b>06</b><em>/ 07</em></div><section><h2>All My Trips</h2><h3>계획부터 현장 입장까지 하나의 여정</h3><p>여행 일정과 예약, 결제, QR 검표를 하나의 서비스로 연결했습니다.</p><small>SPRING BOOT 4</small></section></article>",
+      "css": ".ds-story{display:grid;grid-template-columns:78px 1fr;gap:22px;width:min(590px,90vw);padding:28px 30px;background:#fffdf7f2;color:#293a31;border-top:5px solid #ff9d45;box-shadow:0 22px 55px #25382e26}.ds-story>div{padding-right:20px;border-right:1px solid #24362d25;font-family:'IBM Plex Mono',monospace}.ds-story>div span{display:block;font-size:9px;letter-spacing:.14em;color:#7c8881}.ds-story>div b{display:block;margin-top:8px;color:#ff9d45;font-size:28px}.ds-story em{font-size:10px;font-style:normal;color:#8c958f}.ds-story h2{margin:0;color:#1c2b24;font:400 52px/.95 'Bagel Fat One',sans-serif}.ds-story h3{margin:11px 0;color:#ff9d45;font:600 15px 'Noto Sans KR',sans-serif}.ds-story p{color:#526058;font:400 13px/1.72 'Noto Sans KR',sans-serif}.ds-story small{display:inline-block;padding:6px 8px;border:1px solid #26372e2b;background:#fff;font:500 9px 'IBM Plex Mono',monospace}"
+    },
+    {
+      "name": "Quest Entry Action",
+      "kind": "button",
+      "refersTo": "quest-action",
+      "description": "Dark project-stage action that opens the quest record.",
+      "html": "<button class=\"ds-quest-action\">프로젝트 입장 <span>›</span></button>",
+      "css": ".ds-quest-action{border:0;background:#213128;color:#fff;padding:11px 14px;display:flex;align-items:center;gap:24px;font:400 11px 'Noto Sans KR',sans-serif}.ds-quest-action span{transition:transform .2s}.ds-quest-action:hover span{transform:translateX(2px)}.ds-quest-action:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-quest-action:active{transform:translateY(1px)}"
+    },
+    {
+      "name": "Quest Record",
+      "kind": "card",
+      "refersTo": "drawer",
+      "description": "Project proof sheet used inside the modal right drawer.",
+      "html": "<section class=\"ds-record\"><small>QUEST COMPLETE</small><h2>All My Trips</h2><p>예약부터 현장 검표까지의 전체 흐름과 반복 가능한 운영 배포 완성</p></section>",
+      "css": ".ds-record{width:min(520px,90vw);padding:40px;background:#faf7ef;color:#293a31;box-shadow:-25px 0 70px #10201840}.ds-record small{color:#ff9d45;font:600 10px 'IBM Plex Mono',monospace;letter-spacing:.16em}.ds-record h2{margin:14px 0 18px;font:400 64px/.95 'Bagel Fat One',sans-serif}.ds-record p{color:#59665f;font:400 14px/1.75 'Noto Sans KR',sans-serif;word-break:keep-all}"
+    },
+    {
+      "name": "Map Route",
+      "kind": "nav",
+      "description": "Direct route selector inside the overview map drawer.",
+      "html": "<button class=\"ds-route\"><span>06</span><div><b>All My Trips</b><small>계획부터 현장 입장까지 하나의 여정</small></div><i>›</i></button>",
+      "css": ".ds-route{width:100%;display:grid;grid-template-columns:48px 1fr 20px;gap:15px;align-items:center;text-align:left;border:0;border-block:1px solid #26372e25;background:none;padding:14px 0;color:#293a31}.ds-route>span{width:44px;height:44px;display:grid;place-items:center;border:2px solid #26372e;background:#ff9d45;color:#fff;font:600 10px 'IBM Plex Mono',monospace}.ds-route b,.ds-route small{display:block}.ds-route b{color:#ff9d45;font:600 14px 'Noto Sans KR',sans-serif}.ds-route small{margin-top:3px;color:#78837d;font:400 10px 'Noto Sans KR',sans-serif}.ds-route i{font-style:normal}.ds-route:hover{background:#fffdf780}.ds-route:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-route:active{transform:translateX(1px)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Walkable Career World",
+    "overview": "This sidecar records shipped v2 only; v1 remains separate. V2 is a warm 2D career adventure where a centered pixel hero traverses seven geometric landmarks while paper HUD, story, and quest surfaces keep the evidence path legible. The selected stop color becomes the live accent across navigation and state.",
+    "keyCharacteristics": [
+      "Fixed paper HUD framing a horizontally translated seven-stop world.",
+      "Centered CSS pixel hero with animated limbs during stage travel.",
+      "Independent far-mountain, near-mountain, world, ground, and road layers.",
+      "Active-accent landmark, beacon, story, focus, progress, and scrollbar.",
+      "Modal project and map drawers with keyboard containment and restoration.",
+      "Compact mobile project stages that preserve the project-entry action."
+    ],
+    "rules": [
+      { "name": "The Active Stage Rule", "body": "Use the current stop color as the single live accent across the hero, landmark, story, focus, progress, and scrollbar.", "section": "colors" },
+      { "name": "The Three-Voice Rule", "body": "Bagel Fat One names destinations, Noto Sans KR explains them, and IBM Plex Mono reports game state.", "section": "typography" },
+      { "name": "The Centered Hero Rule", "body": "Keep the character fixed and move world layers at distinct rates.", "section": "layout" },
+      { "name": "The Modal Quest Rule", "body": "Project proof and map routing open as focused drawers and return focus to their trigger.", "section": "layout" },
+      { "name": "The Responsive Quest Rule", "body": "Below 480px, project stages hide narrative and chips while retaining title, subtitle, and entry action.", "section": "layout" }
+    ],
+    "dos": [
+      "Do keep v2 game-first and preserve v1 separately.",
+      "Do preserve all seven stops and all four navigation modes.",
+      "Do preserve parallax depth, active-stage color continuity, and project evidence.",
+      "Do trap dialog focus, close on Escape, restore focus, and inert the background.",
+      "Do honor reduced motion and preserve the compact mobile project CTA."
+    ],
+    "donts": [
+      "Don't restore the stale control-room evidence-ledger design or inline tabs.",
+      "Don't flatten the independent parallax layers.",
+      "Don't add project entry actions to non-project stages.",
+      "Don't fire movement shortcuts from controls or while a drawer is open.",
+      "Don't remove stage colors, phrase-safe Korean, or mobile prioritization."
+    ]
+  }
+}
