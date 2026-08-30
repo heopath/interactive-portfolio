@@ -7,7 +7,7 @@
 - 형태: 5인 팀 프로젝트
 - 역할: PM·팀장, 백엔드·인프라
 - GitHub: https://github.com/heopath/TravelGuide-Project-Team1
-- 배포: https://allmytrip.click/home
+- 시연 영상: https://youtu.be/HHS_6rQ8duA
 - Wiki: https://github.com/heopath/TravelGuide-Project-Team1/wiki
 
 ## 한 줄 소개
@@ -29,7 +29,8 @@
 - 회원가입·세션 인증·Spring Security·공통 응답과 예외 처리
 - AWS EC2·RDS, Nginx, Cloudflare, GitHub Actions CI/CD 구성
 - 티켓 예약·대기열·결제·발권·현장 검표 전 과정 구현
-- Redis Lua 기반 예약 대기열과 동시성 제어
+- Redis Sorted Set·Lua 기반 예약 대기열 순서와 상태 관리
+- PostgreSQL 행 잠금·조건부 UPDATE 기반 재고 동시성 제어
 - 관리자 운영 화면, 감사 로그와 알림 구현
 - API 계약·PR·운영 배포 최종 검수와 문서화
 
@@ -51,7 +52,7 @@
 
 ### 해결
 
-Redis Lua 스크립트로 대기열 등록·순번·입장 처리를 원자적으로 수행했습니다. 단위·동시성 테스트와 k6 부하 테스트를 분리해 처리량과 데이터 정확성을 각각 검증했습니다.
+Redis Sorted Set과 Lua 스크립트로 대기열 등록·순번·입장 상태를 관리했습니다. 실제 재고 차감은 PostgreSQL 행 잠금과 잔여 수량 조건부 UPDATE로 처리해 초과 판매를 방지했습니다. 단위·동시성 테스트와 k6 부하 테스트를 분리해 처리량과 데이터 정확성을 각각 검증했습니다.
 
 ### 결과
 
