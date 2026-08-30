@@ -3,7 +3,7 @@
 ## 기본 정보
 
 - 기간: 2026.08.03 — 2026.09.04
-- 버전: v0.0.5
+- 버전: v0.0.8
 - 형태: 5인 팀 프로젝트
 - 역할: PM·팀장, 백엔드·인프라
 - GitHub: https://github.com/heopath/TravelGuide-Project-Team1
@@ -76,7 +76,7 @@ GitHub Actions에서 빌드·테스트·CodeQL을 수행한 뒤 OIDC, S3, SSM과
 - 서버 테스트 718개 전수 통과
 - 화면 수용 테스트 37개 파일 전수 통과
 - Java·JavaScript·Actions CodeQL 통과
-- v0.0.5 운영 배포 및 `/home` 응답 확인
+- v0.0.8 운영 배포 이력 및 전체 기능 시연 영상 공개
 - 최근 기록 기준 전체 배포 2분 23초
 
 ## 미디어 계획
