@@ -59,7 +59,7 @@
       "refersTo": "hud-action",
       "description": "Paper-framed action that opens the complete journey map.",
       "html": "<button class=\"ds-hud-action\">전체 지도</button>",
-      "css": ".ds-hud-action{height:40px;border:1px solid #25342c2e;background:#fff;color:#213128;padding:0 14px;font:400 12px 'Noto Sans KR',sans-serif;cursor:pointer}.ds-hud-action:hover{background:#fffdf7}.ds-hud-action:focus-visible{outline:3px solid #ff7657;outline-offset:4px}.ds-hud-action:active{transform:translateY(1px)}"
+      "css": ".ds-hud-action{height:40px;border:1px solid #25342c2e;background:#fff;color:#213128;padding:0 14px;font:400 12px 'Pretendard Variable',Pretendard,sans-serif;cursor:pointer}.ds-hud-action:hover{background:#fffdf7}.ds-hud-action:focus-visible{outline:3px solid #ff7657;outline-offset:4px}.ds-hud-action:active{transform:translateY(1px)}"
     },
     {
       "name": "Active Landmark",
@@ -74,7 +74,7 @@
       "refersTo": "story-panel",
       "description": "Current-stage narrative card with count rail and technology chip.",
       "html": "<article class=\"ds-story\"><div><span>STAGE</span><b>06</b><em>/ 07</em></div><section><h2>All My Trips</h2><h3>계획부터 현장 입장까지 하나의 여정</h3><p>여행 일정과 예약, 결제, QR 검표를 하나의 서비스로 연결했습니다.</p><small>SPRING BOOT 4</small></section></article>",
-      "css": ".ds-story{display:grid;grid-template-columns:78px 1fr;gap:22px;width:min(590px,90vw);padding:28px 30px;background:#fffdf7f2;color:#293a31;border-top:5px solid #ff9d45;box-shadow:0 22px 55px #25382e26}.ds-story>div{padding-right:20px;border-right:1px solid #24362d25;font-family:'IBM Plex Mono',monospace}.ds-story>div span{display:block;font-size:9px;letter-spacing:.14em;color:#7c8881}.ds-story>div b{display:block;margin-top:8px;color:#ff9d45;font-size:28px}.ds-story em{font-size:10px;font-style:normal;color:#8c958f}.ds-story h2{margin:0;color:#1c2b24;font:400 52px/.95 'Bagel Fat One',sans-serif}.ds-story h3{margin:11px 0;color:#ff9d45;font:600 15px 'Noto Sans KR',sans-serif}.ds-story p{color:#526058;font:400 13px/1.72 'Noto Sans KR',sans-serif}.ds-story small{display:inline-block;padding:6px 8px;border:1px solid #26372e2b;background:#fff;font:500 9px 'IBM Plex Mono',monospace}"
+      "css": ".ds-story{display:grid;grid-template-columns:78px 1fr;gap:22px;width:min(590px,90vw);padding:28px 30px;background:#fffdf7f2;color:#293a31;border-top:5px solid #ff9d45;box-shadow:0 22px 55px #25382e26}.ds-story>div{padding-right:20px;border-right:1px solid #24362d25;font-family:'IBM Plex Mono',monospace}.ds-story>div span{display:block;font-size:9px;letter-spacing:.14em;color:#7c8881}.ds-story>div b{display:block;margin-top:8px;color:#ff9d45;font-size:28px}.ds-story em{font-size:10px;font-style:normal;color:#8c958f}.ds-story h2{margin:0;color:#1c2b24;font:800 46px/1.04 'Pretendard Variable',Pretendard,sans-serif}.ds-story h3{margin:11px 0;color:#ff9d45;font:600 15px 'Pretendard Variable',Pretendard,sans-serif}.ds-story p{color:#526058;font:400 13px/1.72 'Pretendard Variable',Pretendard,sans-serif}.ds-story small{display:inline-block;padding:6px 8px;border:1px solid #26372e2b;background:#fff;font:500 9px 'IBM Plex Mono',monospace}"
     },
     {
       "name": "Quest Entry Action",
@@ -82,7 +82,7 @@
       "refersTo": "quest-action",
       "description": "Dark project-stage action that opens the quest record.",
       "html": "<button class=\"ds-quest-action\">프로젝트 입장 <span>›</span></button>",
-      "css": ".ds-quest-action{border:0;background:#213128;color:#fff;padding:11px 14px;display:flex;align-items:center;gap:24px;font:400 11px 'Noto Sans KR',sans-serif}.ds-quest-action span{transition:transform .2s}.ds-quest-action:hover span{transform:translateX(2px)}.ds-quest-action:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-quest-action:active{transform:translateY(1px)}"
+      "css": ".ds-quest-action{border:0;background:#213128;color:#fff;padding:11px 14px;display:flex;align-items:center;gap:24px;font:400 11px 'Pretendard Variable',Pretendard,sans-serif}.ds-quest-action span{transition:transform .2s}.ds-quest-action:hover span{transform:translateX(2px)}.ds-quest-action:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-quest-action:active{transform:translateY(1px)}"
     },
     {
       "name": "Quest Record",
@@ -90,14 +90,14 @@
       "refersTo": "drawer",
       "description": "Project proof sheet used inside the modal right drawer.",
       "html": "<section class=\"ds-record\"><small>QUEST COMPLETE</small><h2>All My Trips</h2><p>예약부터 현장 검표까지의 전체 흐름과 반복 가능한 운영 배포 완성</p></section>",
-      "css": ".ds-record{width:min(520px,90vw);padding:40px;background:#faf7ef;color:#293a31;box-shadow:-25px 0 70px #10201840}.ds-record small{color:#ff9d45;font:600 10px 'IBM Plex Mono',monospace;letter-spacing:.16em}.ds-record h2{margin:14px 0 18px;font:400 64px/.95 'Bagel Fat One',sans-serif}.ds-record p{color:#59665f;font:400 14px/1.75 'Noto Sans KR',sans-serif;word-break:keep-all}"
+      "css": ".ds-record{width:min(520px,90vw);padding:40px;background:#faf7ef;color:#293a31;box-shadow:-25px 0 70px #10201840}.ds-record small{color:#ff9d45;font:600 10px 'IBM Plex Mono',monospace;letter-spacing:.16em}.ds-record h2{margin:14px 0 18px;font:800 56px/1.04 'Pretendard Variable',Pretendard,sans-serif}.ds-record p{color:#59665f;font:400 14px/1.75 'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all}"
     },
     {
       "name": "Map Route",
       "kind": "nav",
       "description": "Direct route selector inside the overview map drawer.",
       "html": "<button class=\"ds-route\"><span>06</span><div><b>All My Trips</b><small>계획부터 현장 입장까지 하나의 여정</small></div><i>›</i></button>",
-      "css": ".ds-route{width:100%;display:grid;grid-template-columns:48px 1fr 20px;gap:15px;align-items:center;text-align:left;border:0;border-block:1px solid #26372e25;background:none;padding:14px 0;color:#293a31}.ds-route>span{width:44px;height:44px;display:grid;place-items:center;border:2px solid #26372e;background:#ff9d45;color:#fff;font:600 10px 'IBM Plex Mono',monospace}.ds-route b,.ds-route small{display:block}.ds-route b{color:#ff9d45;font:600 14px 'Noto Sans KR',sans-serif}.ds-route small{margin-top:3px;color:#78837d;font:400 10px 'Noto Sans KR',sans-serif}.ds-route i{font-style:normal}.ds-route:hover{background:#fffdf780}.ds-route:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-route:active{transform:translateX(1px)}"
+      "css": ".ds-route{width:100%;display:grid;grid-template-columns:48px 1fr 20px;gap:15px;align-items:center;text-align:left;border:0;border-block:1px solid #26372e25;background:none;padding:14px 0;color:#293a31}.ds-route>span{width:44px;height:44px;display:grid;place-items:center;border:2px solid #26372e;background:#ff9d45;color:#fff;font:600 10px 'IBM Plex Mono',monospace}.ds-route b,.ds-route small{display:block}.ds-route b{color:#ff9d45;font:600 14px 'Pretendard Variable',Pretendard,sans-serif}.ds-route small{margin-top:3px;color:#78837d;font:400 10px 'Pretendard Variable',Pretendard,sans-serif}.ds-route i{font-style:normal}.ds-route:hover{background:#fffdf780}.ds-route:focus-visible{outline:3px solid #ff9d45;outline-offset:4px}.ds-route:active{transform:translateX(1px)}"
     }
   ],
   "narrative": {
@@ -113,7 +113,7 @@
     ],
     "rules": [
       { "name": "The Active Stage Rule", "body": "Use the current stop color as the single live accent across the hero, landmark, story, focus, progress, and scrollbar.", "section": "colors" },
-      { "name": "The Three-Voice Rule", "body": "Bagel Fat One names destinations, Noto Sans KR explains them, and IBM Plex Mono reports game state.", "section": "typography" },
+      { "name": "The Two-Voice Rule", "body": "Pretendard names destinations and explains them, separated by weight and size, and IBM Plex Mono reports game state.", "section": "typography" },
       { "name": "The Centered Hero Rule", "body": "Keep the character fixed and move world layers at distinct rates.", "section": "layout" },
       { "name": "The Modal Quest Rule", "body": "Project proof and map routing open as focused drawers and return focus to their trigger.", "section": "layout" },
       { "name": "The Responsive Quest Rule", "body": "Below 480px, project stages hide narrative and chips while retaining title, subtitle, and entry action.", "section": "layout" }
