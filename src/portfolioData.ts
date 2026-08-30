@@ -54,7 +54,7 @@ export const stops: Stop[] = [
     project: {
       name: 'All My Trips',
       period: '2026.08 — 09',
-      status: 'v0.0.5 · 핵심 기능 구현 및 운영 배포',
+      status: 'v0.0.8 · 핵심 기능 구현 및 AWS 운영 배포',
       team: '5인 팀 · PM/팀장',
       role: '인증·보안 · 인프라 · 티켓 예약/결제/발권/검표 · 통합 검수',
       outcome: '예약부터 현장 검표까지의 전체 흐름과 반복 가능한 AWS 배포 완성',
