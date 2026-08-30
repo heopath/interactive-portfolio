@@ -16,7 +16,7 @@ Java/Spring 백엔드 개발자를 채용하는 채용 담당자와 실무 면�
 
 ## Positioning
 
-21개월의 MES·IT 인프라 운영 경험을 바탕으로 사용자의 업무 흐름을 이해하고, Java/Spring 개발부터 배포·운영까지 연결하는 백엔드 개발자 포트폴리오다.
+1년 10개월의 IT 인프라 운영 경험을 바탕으로 사용자의 업무 흐름을 이해하고, Java/Spring 구현부터 AWS 배포까지 연결하는 백엔드 개발자 포트폴리오다.
 
 ## Operating Context
 
@@ -25,9 +25,9 @@ Java/Spring 백엔드 개발자를 채용하는 채용 담당자와 실무 면�
 ## Capabilities and Constraints
 
 - Start부터 Next Stage까지 7개 경력 지점을 탐색한다.
-- 빠르게 보기에서 전체 핵심 정보를 확인한다.
+- 30초 요약에서 전체 핵심 정보를 확인한다.
 - 프로젝트 상세에서 팀 전체 기능과 개인 기여를 구분한다.
-- GitHub, 라이브 서비스, Wiki와 이메일로 이동한다.
+- GitHub, 시연 영상, Wiki, 블로그와 이메일로 이동한다.
 - 생년월일, 전화번호, 주소, 내부 서버 구성과 운영 비밀은 공개하지 않는다.
 - 데스크톱·모바일 반응형과 `prefers-reduced-motion`을 지원한다.
 
@@ -36,14 +36,14 @@ Java/Spring 백엔드 개발자를 채용하는 채용 담당자와 실무 면�
 - 제품명은 `MINJAE.DEV`다.
 - 주인공은 허민재이며 희망 직무는 Java/Spring 백엔드 개발자다.
 - 현장을 이해하고 운영까지 연결한다는 목소리를 유지한다.
-- 기존 v1의 게임형 경력 여정은 보존한다. v2는 비교 가능한 별도 화면으로 만든다.
+- 개선된 v2 화면을 기본 경로로 제공하고, 기존 v1은 비교 가능한 별도 화면으로 보존한다.
 
 ## Evidence on Hand
 
 - `docs/PORTFOLIO_BRIEF.md`: 콘텐츠와 공개 범위 명세
 - `docs/ALL_MY_TRIPS_CASE_STUDY.md`: 대표 프로젝트 사례
 - `src/main.tsx`: 현재 공개 문구, 프로젝트 링크와 검증 수치
-- 외부 증거: GitHub 저장소, All My Trips 라이브 서비스와 Wiki
+- 외부 증거: GitHub 저장소, All My Trips 시연 영상과 Wiki
 - 제공되지 않은 추천사나 상업적 성과는 만들지 않는다.
 
 ## Product Principles
