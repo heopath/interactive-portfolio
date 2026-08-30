@@ -24,19 +24,19 @@ colors:
   sun-gold: "#ffd370"
 typography:
   display:
-    fontFamily: "Bagel Fat One, sans-serif"
-    fontSize: "clamp(34px, 4vw, 62px)"
-    fontWeight: 400
-    lineHeight: 0.95
-    letterSpacing: "-0.03em"
+    fontFamily: "Pretendard Variable, Pretendard, sans-serif"
+    fontSize: "clamp(32px, 3.6vw, 54px)"
+    fontWeight: 800
+    lineHeight: 1.04
+    letterSpacing: "-0.045em"
   headline:
-    fontFamily: "Bagel Fat One, sans-serif"
-    fontSize: "clamp(42px, 6vw, 76px)"
-    fontWeight: 400
-    lineHeight: 0.95
-    letterSpacing: "-0.03em"
+    fontFamily: "Pretendard Variable, Pretendard, sans-serif"
+    fontSize: "clamp(38px, 5vw, 62px)"
+    fontWeight: 800
+    lineHeight: 1.04
+    letterSpacing: "-0.045em"
   body:
-    fontFamily: "Noto Sans KR, sans-serif"
+    fontFamily: "Pretendard Variable, Pretendard, sans-serif"
     fontSize: "13px"
     fontWeight: 400
     lineHeight: 1.72
@@ -125,22 +125,22 @@ The base world uses botanical greens, misty blue-green sky, warm paper, sand, an
 
 ## Typography
 
-**Display Font:** Bagel Fat One (sans-serif fallback)  
-**Body Font:** Noto Sans KR (sans-serif fallback)  
+**Display Font:** Pretendard Variable (Pretendard, system-ui fallback)  
+**Body Font:** Pretendard Variable (Pretendard, system-ui fallback)  
 **Label/Mono Font:** IBM Plex Mono (monospace fallback)
 
-**Character:** Bagel Fat One gives destinations and quest headings an exuberant game-title voice. Noto Sans KR carries Korean explanation and controls. IBM Plex Mono provides compact system notation for stage numbers, HUD labels, station signs, keyboard keys, and metadata.
+**Character:** Pretendard sets destinations and quest headings in a heavy, tightly tracked voice that stays professional rather than playful, and carries Korean explanation and controls in the same family for a single consistent texture. IBM Plex Mono provides compact system notation for stage numbers, HUD labels, station signs, keyboard keys, and metadata.
 
 ### Hierarchy
 
-- **Display:** Bagel Fat One at `clamp(34px, 4vw, 62px)`, 0.95 line height, and `-0.03em`; used for the story title. It becomes 36px below 850px and 30px below 480px.
-- **Headline:** Bagel Fat One at `clamp(42px, 6vw, 76px)` for drawer titles; responsive sizes are 48px then 42px.
-- **Body:** Noto Sans KR at 13px/1.72 for story copy and 13–14px/1.55–1.75 in drawers. Korean narrative uses `word-break: keep-all`.
+- **Display:** Pretendard at 800 weight, `clamp(32px, 3.6vw, 54px)`, 1.04 line height, and `-0.045em`; used for the story title. It becomes 36px below 850px and 30px below 480px.
+- **Headline:** Pretendard at 800 weight, `clamp(38px, 5vw, 62px)` for drawer titles; responsive sizes are 48px then 42px.
+- **Body:** Pretendard at 13px/1.72 for story copy and 13–14px/1.55–1.75 in drawers. Korean narrative uses `word-break: keep-all`.
 - **Label:** IBM Plex Mono at 9–11px with medium or semibold weight and generous tracking for HUD status, counts, signs, metadata, tags, and keyboard hints.
 
 ### Named Rules
 
-**The Three-Voice Rule.** Bagel Fat One names the adventure, Noto Sans KR explains it, and IBM Plex Mono reports game state.
+**The Two-Voice Rule.** Pretendard names the adventure and explains it — one family, separated by weight and size — while IBM Plex Mono reports game state.
 
 ## Layout
 
@@ -184,7 +184,7 @@ Each stop is a 230×300px button containing a stage-specific geometric building,
 
 ### Story Panel
 
-The paper panel uses a five-pixel active-accent top rule, monospaced stage rail, Bagel Fat One title, colored subtitle, Korean narrative, and bordered technology tags. Its entrance is a short rise/fade. Project stops append a dark `프로젝트 입장` action; non-project stops do not.
+The paper panel uses a five-pixel active-accent top rule, monospaced stage rail, Pretendard display title, colored subtitle, Korean narrative, and bordered technology tags. Its entrance is a short rise/fade. Project stops append a dark `프로젝트 입장` action; non-project stops do not.
 
 ### Project Dialog
 
