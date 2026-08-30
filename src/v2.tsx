@@ -1,38 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ArrowLeft, ArrowRight, Check, ChevronRight, ExternalLink, Mail, Map, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, BookOpen, Check, ChevronRight, ExternalLink, Mail, Map, X } from 'lucide-react'
 import './v2.css'
-
-type Project = {
-  period: string
-  team: string
-  role: string
-  outcome: string
-  proof: string[]
-  metrics?: string[]
-  links: { label: string; href: string }[]
-}
-
-type Stop = {
-  id: string
-  title: string
-  subtitle: string
-  story: string
-  skills: string[]
-  color: string
-  kind: string
-  project?: Project
-}
-
-const stops: Stop[] = [
-  { id: 'start', title: 'Backend Journey', subtitle: '현장을 이해하는 백엔드 개발자', story: '21개월의 MES·IT 인프라 운영 경험을 바탕으로 사용자의 업무 흐름을 이해하고, 개발부터 배포·운영까지 연결합니다.', skills: ['Java / Spring', 'IT 인프라 21개월', 'Service Operation'], color: '#ff7657', kind: 'home' },
-  { id: 'field', title: 'Field Base', subtitle: '운영 현장에서 배운 시스템의 책임', story: '생산 프로그램과 파일 서버, 권한, 보안 솔루션과 현장 장비를 운영하며 코드가 실제 업무와 연결될 때 비로소 가치가 생긴다는 기준을 얻었습니다.', skills: ['MES 유지보수', 'Windows Server', 'AD / ACL'], color: '#74aa6a', kind: 'factory' },
-  { id: 'mes', title: 'Smart Factory', subtitle: 'PVC 재활용 공정 MES', story: 'C# WinForms와 Oracle DB를 연결해 원재료 투입, LOT, 재고와 공정 데이터를 추적하고 설비 상태를 직관적으로 보여주는 현장 화면을 구현했습니다.', skills: ['C# WinForms', 'Oracle DB', 'Traceability'], color: '#4d9ec5', kind: 'plant', project: { period: '2022.10 — 12', team: '교육 프로젝트', role: '현장 통합 UI · 1·2차 분쇄 공정 · DB 연동 · 최종 발표', outcome: '설비 가동과 저장소 현황을 공정도 기반 애니메이션으로 시각화', proof: ['원재료 투입과 LOT 추가·삭제, 재고 관리 구현', 'Oracle DB 연동과 공정 데이터 추적', '공정도 기반 생산 현황 시각화'], links: [{ label: 'GitHub', href: 'https://github.com/heopath/2022-SmartFactory' }] } },
-  { id: 'spring', title: 'Spring Transition', subtitle: '운영 경험을 웹 백엔드로 확장', story: 'Java와 Spring Boot, 관계형 데이터 모델링, Docker와 AWS 배포를 학습하며 기존 C#·인프라 경험을 웹 서비스의 설계와 운영 역량으로 확장했습니다.', skills: ['Java 21', 'Spring Boot', 'Docker / AWS'], color: '#8b79c6', kind: 'academy' },
-  { id: 'shop', title: 'K-Market', subtitle: '운영 흐름을 구현한 쇼핑몰', story: '상품 등록부터 주문·배송·반품까지 이어지는 관리자 운영 흐름을 구현하고 GitHub Actions와 AWS EC2를 연결해 반복 가능한 배포 환경을 구성했습니다.', skills: ['Spring Boot', 'MySQL', 'GitHub Actions'], color: '#b4d446', kind: 'market', project: { period: '2026.06 — 07', team: '팀 프로젝트', role: '관리자 대시보드 · 환경설정 · 상품 · 주문/배송/반품 · CI/CD', outcome: '관리자가 상품과 주문 상태를 한 화면에서 처리하는 운영 흐름 완성', proof: ['회원·판매자·관리자 권한 구분', 'JPA·MyBatis 기반 상품과 주문 처리', 'EC2 서비스 재시작까지 자동 배포'], links: [{ label: 'GitHub', href: 'https://github.com/heopath/ShoppingMall-Project-Team3' }] } },
-  { id: 'trips', title: 'All My Trips', subtitle: '계획부터 현장 입장까지 하나의 여정', story: '여행 일정과 AI 추천, 관광 티켓 예약·결제·QR 검표를 하나의 서비스로 연결했습니다. 팀장으로서 인증·인프라와 티켓 전 과정을 맡았습니다.', skills: ['Spring Boot 4', 'Redis Lua', 'AWS CI/CD'], color: '#ff9d45', kind: 'airport', project: { period: '2026.08 — 09', team: '5인 팀 · PM/팀장', role: '인증·보안 · 인프라 · 티켓 예약/결제/발권/검표 · 통합 검수', outcome: '예약부터 현장 검표까지의 전체 흐름과 반복 가능한 운영 배포 완성', proof: ['Redis Lua로 대기열 등록·순번·입장을 원자적으로 처리', '결제 승인부터 QR 발권·중복 검표 방지까지 상태 연결', 'GitHub Actions → OIDC → S3 → SSM 자동 배포'], metrics: ['서버 테스트 718개', '화면 수용 테스트 37개', '재고 10개 · 동시 접근 30명', '최근 전체 배포 2분 23초'], links: [{ label: 'GitHub', href: 'https://github.com/heopath/TravelGuide-Project-Team1' }, { label: 'Live', href: 'https://allmytrip.click/home' }, { label: 'Wiki', href: 'https://github.com/heopath/TravelGuide-Project-Team1/wiki' }] } },
-  { id: 'next', title: 'Next Stage', subtitle: '신뢰를 만드는 개발자로', story: '기능 구현 이후의 보안, 배포와 운영까지 고려하며 동료에게는 함께 일하기 좋은 개발자, 사용자에게는 실제 도움이 되는 서비스를 만들겠습니다.', skills: ['Backend Engineering', 'Reliable Delivery', 'Clear Communication'], color: '#e66f66', kind: 'tower' }
-]
+import { stops, type Stop } from './portfolioData'
 
 function PixelHero({ moving }: { moving: boolean }) {
   return <div className={`pixel-hero ${moving ? 'moving' : ''}`} aria-label="경력 세계를 걷는 허민재 캐릭터">
@@ -107,10 +77,10 @@ function App() {
 
   return <main className={`game ${current.project ? 'has-project' : ''}`} style={{ '--accent': current.color } as React.CSSProperties}>
     <header className="hud-top" inert={panelOpen || undefined} aria-hidden={panelOpen || undefined}>
-      <a className="logo" href="/">MINJAE<span>.DEV</span></a>
+      <a className="logo" href={import.meta.env.BASE_URL}>MINJAE<span>.DEV</span></a>
       <div className="quest-title"><span>ACTIVE JOURNEY</span><b>Java · Spring Backend Developer</b></div>
       <div className="hud-actions">
-        <button onClick={event => { lastTriggerRef.current = event.currentTarget; setMapOpen(true) }}><Map /> 전체 지도</button>
+        <button onClick={event => { lastTriggerRef.current = event.currentTarget; setMapOpen(true) }}><Map /> 30초 요약</button>
         <a href="https://github.com/heopath" target="_blank" rel="noreferrer" aria-label="GitHub"><b>GH</b></a>
       </div>
     </header>
@@ -151,10 +121,10 @@ function App() {
     </aside>}
 
     {mapOpen && <aside ref={dialogRef} className="map-drawer" role="dialog" aria-modal="true" aria-labelledby="map-heading">
-      <button className="drawer-close" onClick={closePanel} aria-label="전체 지도 닫기"><X /></button>
-      <h2 id="map-heading">나의 개발 여정</h2><p>게임을 건너뛰고 원하는 경력 지점으로 바로 이동할 수 있습니다.</p>
+      <button className="drawer-close" onClick={closePanel} aria-label="30초 요약 닫기"><X /></button>
+      <h2 id="map-heading">핵심 경험 한눈에 보기</h2><p>대표 백엔드 프로젝트부터 인프라 운영 경험까지 빠르게 확인할 수 있습니다.</p>
       <div className="map-route">{stops.map((stop, index) => <button key={stop.id} onClick={() => { go(index); closePanel() }} className={index === active ? 'active' : ''}><span style={{ background: stop.color }}>{String(index + 1).padStart(2, '0')}</span><div><b>{stop.title}</b><small>{stop.subtitle}</small></div><ChevronRight /></button>)}</div>
-      <div className="map-contact"><a href="mailto:heocoding@gmail.com"><Mail /> heocoding@gmail.com</a><a href="https://github.com/heopath" target="_blank" rel="noreferrer"><b>GH</b> GitHub</a></div>
+      <div className="map-contact"><a href="mailto:heocoding@gmail.com"><Mail /> heocoding@gmail.com</a><a href="https://github.com/heopath" target="_blank" rel="noreferrer"><b>GH</b> GitHub</a><a href="https://blog.naver.com/heo-world" target="_blank" rel="noreferrer"><BookOpen /> Blog</a></div>
     </aside>}
     {panelOpen && <button className="shade" onClick={closePanel} aria-label="열린 패널 닫기" tabIndex={-1} />}
   </main>
