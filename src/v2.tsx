@@ -80,6 +80,7 @@ function App() {
       <a className="logo" href={import.meta.env.BASE_URL}>MINJAE<span>.DEV</span></a>
       <div className="quest-title"><span>ACTIVE JOURNEY</span><b>Java · Spring Backend Developer</b></div>
       <div className="hud-actions">
+        <a href={import.meta.env.BASE_URL}>요약·PDF</a>
         <button onClick={event => { lastTriggerRef.current = event.currentTarget; setMapOpen(true) }}><Map /> 30초 요약</button>
         <a href="https://github.com/heopath" target="_blank" rel="noreferrer" aria-label="GitHub"><b>GH</b></a>
       </div>

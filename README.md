@@ -48,7 +48,14 @@
 - GitHub Actions
 - GitHub Pages
 
-현재 개선된 게임형 화면이 기본 경로에 표시됩니다. 초기 화면은 [`v1.html`](https://heopath.github.io/interactive-portfolio/v1.html)에 보존하고, 기존 `v2.html` 주소도 호환용으로 유지합니다. 두 화면은 `src/portfolioData.ts`의 동일한 경력·프로젝트 데이터를 사용합니다.
+기본 경로는 경력·역할·배포 경험을 바로 읽는 요약형 화면입니다. 6페이지 PDF를 다운로드할 수 있습니다. 기존 게임형은 [`v2.html`](https://heopath.github.io/interactive-portfolio/v2.html), 초기 화면은 `v1.html`에 보존합니다. 공통 프로젝트 데이터는 `src/portfolioData.ts`를 사용합니다.
+
+## 2026.09 내용 정리
+
+- All My Trips는 AWS 배포 후 Oracle Cloud로 애플리케이션·PostgreSQL 데이터를 이관한 포트폴리오 시연용 팀 프로젝트입니다.
+- 팀 전체 기능과 개인의 구현 참여 범위를 구분합니다. 결제는 모의 결제이며 AI 도구의 도움을 받은 구현·학습 범위를 명시합니다.
+- 실행 환경과 근거를 함께 확인하기 어려운 테스트 개수·실패율 요약 수치는 삭제했습니다.
+- `public/minjae-backend-portfolio.pdf`: 제출용 PDF / `src/summary.tsx`: 요약 화면
 
 ## 로컬 실행
 
